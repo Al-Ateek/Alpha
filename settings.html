@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="HTML, CSS">
+    <meta name="author" content="Ahmad Al-Ateek">
+    <meta name="description" content="Settings Page For Alpha Company">
+    <!-- Font Awesome Library -->
+    <link rel="stylesheet" href="css/all.min.css" />
+    <!-- Normalize.CSS -->
+    <link rel="stylesheet" href="css/normalize.css" />
+    <!-- FrameWork -->
+    <link rel="stylesheet" href="css/framework.css" />
+    <!-- Style.CSS -->
+    <link rel="stylesheet" href="css/style.css" />
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <title>Settings</title>
+</head>
+
+<body>
+    <div class="page settings-page d-flex">
+        <!-- Start Side Bar -->
+        <div class="sidebar pd-20">
+            <h3 class="t-center mb-50 p-relative">
+                Alpha
+            </h3>
+            <div class="pages">
+                <a class="mb-10 rad-10 d-block pd-10" href="index.html">
+                    <i class="fa-regular fa-chart-bar fa-fw"></i>
+                    <span class="fs-14 fw-5 ml-10">Dashboard</span>
+                </a>
+                <a class="active rad-10 mb-10 d-block pd-10" href="settings.html">
+                    <i class="fa-solid fa-gear fa-fw"></i>
+                    <span class="fs-14 fw-5 ml-10">Settings</span>
+                </a>
+                <a class="rad-10 mb-10 d-block pd-10" href="profile.html">
+                    <i class="fa-regular fa-user fa-fw"></i>
+                    <span class="fs-14 fw-5 ml-10">Profile</span>
+                </a>
+                <a class="rad-10 mb-10 d-block pd-10" href="projects.html">
+                    <i class="fa-solid fa-diagram-project fa-fw"></i>
+                    <span class="fs-14 fw-5 ml-10">Projects</span>
+                </a>
+                <a class="rad-10 mb-10 d-block pd-10" href="courses.html">
+                    <i class="fa-solid fa-graduation-cap fa-fw"></i>
+                    <span class="fs-14 fw-5 ml-10">Courses</span>
+                </a>
+                <a class="rad-10 mb-10 d-block pd-10" href="friends.html">
+                    <i class="fa-regular fa-circle-user fa-fw"></i>
+                    <span class="fs-14 fw-5 ml-10">Friends</span>
+                </a>
+                <a class="rad-10 mb-10 d-block pd-10" href="files.html">
+                    <i class="fa-regular fa-file fa-fw"></i>
+                    <span class="fs-14 fw-5 ml-10">Files</span>
+                </a>
+                <a class="rad-10 d-block pd-10" href="plans.html">
+                    <i class="fa-regular fa-credit-card fa-fw"></i>
+                    <span class="fs-14 fw-5 ml-10">Plans</span>
+                </a>
+            </div>
+        </div>
+        <!-- End Side Bar -->
+        <!-- Start Content -->
+        <div class="content">
+            <!-- Start Header -->
+            <div class="header d-flex justify-between align-center pd-20 bg-fff">
+                <div class="search p-relative">
+                    <input type="search" placeholder="Type A Keyword" class="pd-10 rad-10 reset-inp" />
+                </div>
+                <div class="notifications d-flex align-center">
+                    <div class="notification-bell p-relative">
+                        <i class="fa-regular fa-bell fa-lg"></i>
+                    </div>
+                    <div class="image ml-10">
+                        <img src="imgs/avatar.png" alt="Photo" class="reset-img" />
+                    </div>
+                </div>
+            </div>
+            <!-- End Header -->
+            <!-- The Content Of The DIV Content XD -->
+            <h1 class="page-title">Settings</h1>
+            <div class="wrapper pd-20 d-grid d-gap-20">
+                <!-- Start Site Control -->
+                <div class="site-control pd-20 rad-10 over-hide bg-fff">
+                    <h2 class="mb-10">Site Control</h2>
+                    <p class="fw-5 fc-888 mb-20">Control The Website If There Is Maintenance</p>
+                    <div class="d-flex justify-between align-center">
+                        <div>
+                            <p class="fw-5 mb-5">Website Control</p>
+                            <p class="fs-14 fc-888">Open/Close Website And Type The Reason</p>
+                        </div>
+                        <label class="p-relative">
+                            <input type="checkbox" class="toggle-checkbox" checked>
+                            <div class="toggle-switch"></div>
+                        </label>
+                    </div>
+                    <textarea placeholder="Close Message Content" class="mt-20 rad-10 pd-10 fs-13"></textarea>
+                </div>
+                <!-- End Site Control -->
+                <!-- Start General Info -->
+                <div class="general-info pd-20 rad-10 over-hide bg-fff">
+                    <h2 class="mb-10">General Info</h2>
+                    <p class="fw-5 fc-888 mb-20">General Information About Your Account</p>
+                    <form>
+                        <label for="f-name" class="d-block fw-5 fc-888">
+                            First Name<br>
+                            <input type="text" placeholder="First Name" id="f-name"
+                                class="mt-10 fs-13 pd-10 rad-10 w-full">
+                        </label>
+                        <label for="l-name" class="d-block mt-20 mb-20 fw-5 fc-888">
+                            Last Name <br>
+                            <input type="text" placeholder="First Name" id="l-name"
+                                class="mt-10 fs-13 pd-10 rad-10 w-full">
+                        </label>
+                        <label class="fw-5 fc-888">Email</label>
+                        <div class="d-flex align-center">
+                            <input type="email" value="o@nn.sa" disabled class="pd-10 mt-10 rad-10 w-full">
+                            <input type="submit" value="Change" class="reset-button fw-6 fc-blue ml-10">
+                        </div>
+                    </form>
+                </div>
+                <!-- End General Info -->
+                <!-- Start Sec Info -->
+                <div class="sec-info pd-20 rad-10 over-hide bg-fff">
+                    <h2>Security Info</h2>
+                    <p class="mb-20 mt-10 fw-5 fc-888">Security Information About Your Account</p>
+                    <ul>
+                        <li class="d-flex justify-between align-center pb-20 bb-eee mb-20">
+                            <div>
+                                <p class="mb-5 fw-5">Password</p>
+                                <p class="fc-888 fs-13">Last Change On 25/10/2021</p>
+                            </div>
+                            <span class="button pd-5 fc-fff rad-5 bg-blue">Change</span>
+                        </li>
+                        <li class="d-flex justify-between align-center pb-20 bb-eee mb-20">
+                            <div>
+                                <p class="mb-5 fw-5">Two-Factor Authentication</p>
+                                <p class="fc-888 fs-13">Enable/Disable The Feature</p>
+                            </div>
+                            <label class="p-relative">
+                                <input type="checkbox" class="toggle-checkbox" checked>
+                                <div class="toggle-switch"></div>
+                            </label>
+                        </li>
+                        <li class="d-flex justify-between align-center">
+                            <div>
+                                <p class="mb-5 fw-5">Devices</p>
+                                <p class="fc-888 fs-13">Check The Login Devices List</p>
+                            </div>
+                            <span class="button bg-eee fw-5 pd-5 rad-5">Devices</span>
+                        </li>
+                    </ul>
+                </div>
+                <!-- End Sec Info -->
+                <!-- Start Social Info -->
+                <div class="social-info pd-20 rad-10 bg-fff over-hide">
+                    <h2>Social Info</h2>
+                    <p class="fw-5 fc-888 mb-20 mt-10">Social Media Information</p>
+                    <ul>
+                        <li class="d-flex mb-10 flex-reverse rad-10 over-hide">
+                            <input type="text" placeholder="Twitter Username"
+                                class="pd-10 reset-inp fs-13 w-full bg-eee">
+                            <i class="fa-brands fa-twitter fc-888"></i>
+                        </li>
+                        <li class="d-flex mb-10 flex-reverse rad-10 over-hide">
+                            <input type="text" placeholder="Facebook Username"
+                                class="pd-10 reset-inp fs-13 w-full bg-eee">
+                            <i class="fa-brands fa-facebook-f fc-888"></i>
+                        </li>
+                        <li class="d-flex mb-10 flex-reverse rad-10 over-hide">
+                            <input type="text" placeholder="Linkedin Username"
+                                class="pd-10 reset-inp fs-13 w-full bg-eee">
+                            <i class="fa-brands fa-linkedin fc-888"></i>
+                        </li>
+                        <li class="d-flex flex-reverse rad-10 over-hide">
+                            <input type="text" placeholder="Youtube Username"
+                                class="pd-10 reset-inp fs-13 w-full bg-eee">
+                            <i class="fa-brands fa-youtube fc-888"></i>
+                        </li>
+                    </ul>
+                </div>
+                <!-- End Social Info -->
+                <!-- Start Widgets Control -->
+                <div class="widgets-control pd-20 over-hide rad-10 bg-fff">
+                    <h2 class="mb-10">Widgets Control</h2>
+                    <p class="fw-5 mb-20 fc-888">Show/Hide Widgets</p>
+                    <ul>
+                        <li class="fw-5 p-relative mb-20">
+                            <label>
+                                <input type="checkbox" checked>
+                                Quick Draft
+                            </label>
+                        </li>
+                        <li class="fw-5 p-relative mb-20">
+                            <label>
+                                <input type="checkbox" checked>
+                                Yearly Targets
+                            </label>
+                        </li>
+                        <li class="fw-5 p-relative mb-20">
+                            <label>
+                                <input type="checkbox" checked>
+                                Tickets Statistics
+                            </label>
+                        </li>
+                        <li class="fw-5 p-relative mb-20">
+                            <label>
+                                <input type="checkbox" checked>
+                                Latest News
+                            </label>
+                        </li>
+                        <li class="fw-5 p-relative mb-20">
+                            <label>
+                                <input type="checkbox">
+                                Latest Tasks
+                            </label>
+                        </li>
+                        <li class="fw-5 p-relative">
+                            <label>
+                                <input type="checkbox" checked>
+                                Top Search Items
+                            </label>
+                        </li>
+                    </ul>
+                </div>
+                <!-- End Widgets Control -->
+                <!-- Start Backup Manager -->
+                <div class="backup-manager pd-20 rad-10 bg-fff over-hide">
+                    <h2>Backup Manager</h2>
+                    <p class="mb-20 mt-10 fc-888 fw-5">Control Backup Time And Location</p>
+                    <ul class="time bb-eee">
+                        <li class="mb-20 fw-5">
+                            <label for="daily" class="p-relative">
+                                <input type="radio" id="daily" name="time" checked>
+                                Daily
+                            </label>
+                        </li>
+                        <li class="mb-20 fw-5">
+                            <label for="monthly" class="p-relative">
+                                <input type="radio" id="monthly" name="time">
+                                Monthly
+                            </label>
+                        </li>
+                        <li class="fw-5 mb-20">
+                            <label for="yearly" class="p-relative">
+                                <input type="radio" id="yearly" name="time">
+                                Yearly
+                            </label>
+                        </li>
+                    </ul>
+                    <ul class="d-flex d-gap-20 size">
+                        <li class="p-relative">
+                            <label for="basic">
+                                <input type="radio" id="basic" name="size">
+                                <div>
+                                    <i class="fa-solid fa-server d-block mb-10"></i>
+                                    <span class="fw-5">Basic</span>
+                                </div>
+                            </label>
+                        </li>
+                        <li class="p-relative">
+                            <label for="pro">
+                                <input type="radio" id="pro" name="size" checked>
+                                <div>
+                                    <i class="fa-solid fa-server d-block mb-10"></i>
+                                    <span class="fw-5">Pro</span>
+                                </div>
+                            </label>
+                        </li>
+                        <li class="p-relative">
+                            <label for="ultimate">
+                                <input type="radio" id="ultimate" name="size">
+                                <div>
+                                    <i class="fa-solid fa-server d-block mb-10"></i>
+                                    <span class="fw-5">Ultimate</span>
+                                </div>
+                            </label>
+                        </li>
+                    </ul>
+                </div>
+                <!-- End Backup Manager -->
+            </div>
+            <!-- ********************************* -->
+        </div>
+        <!-- End Content -->
+    </div>
+</body>
+
+</html>

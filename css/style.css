@@ -26,7 +26,7 @@
   position: absolute;
   bottom: 0px;
   left: 0px;
-  width: 75%;
+  width: 200px;
   height: 3px;
   background-color: #fff;
 }
@@ -36,7 +36,7 @@
   position: absolute;
   bottom: 0px;
   left: 0px;
-  width: 25%;
+  width: 50px;
   height: 3px;
   background-color: #000;
 }
@@ -96,6 +96,10 @@ a {
 @media(max-width: 767px) {
   .dashboard-page .wrapper {
     grid-template-columns: minmax(200px, 1fr);
+  }
+
+  .settings-page .wrapper {
+    grid-template-columns: minmax(100px, 1fr);
   }
 }
 
@@ -719,6 +723,245 @@ a {
 }
 
 /* End Projects */
+/* Start Site Control */
+.site-control textarea {
+  width: 100%;
+  min-height: 150px;
+  resize: none;
+  padding: 10px;
+  border: 1px solid #ccc;
+  outline: none;
+}
+
+.general-info form input {
+  border: 1px solid #ccc;
+  outline: none;
+}
+
+.general-info form input[type="email"] {
+  background-color: rgba(0, 117, 255, 20%);
+  cursor: not-allowed;
+}
+
+.general-info form input[type="submit"] {
+  background-color: transparent;
+  border: none;
+  padding-bottom: 1px;
+  width: fit-content;
+}
+
+/* End Site Control */
+/* Start Social Info */
+.social-info ul li {
+  border: 1px solid #ccc;
+  background-color: #eee;
+}
+
+.social-info ul li i {
+  width: 40px;
+  display: grid;
+  place-content: center;
+  border-right: 1px solid #ccc;
+  height: 40px;
+  transition: var(--main-transition, 0.3s);
+  -webkit-transition: var(--main-transition, 0.3s);
+  -moz-transition: var(--main-transition, 0.3s);
+  -ms-transition: var(--main-transition, 0.3s);
+  -o-transition: var(--main-transition, 0.3s);
+}
+
+.social-info ul li input:focus+i {
+  color: #000;
+}
+
+/* End Social Info */
+/* Start Widgets Control */
+.widgets-control li label {
+  cursor: pointer;
+}
+
+.widgets-control li input {
+  -webkit-appearance: none;
+  appearance: none;
+  cursor: pointer;
+  margin-left: 30px;
+}
+
+.widgets-control li input::before {
+  content: "";
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  top: 50%;
+  left: 0px;
+  border: 2px solid #888;
+  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  transition: var(--main-transition, 0.3s);
+  -webkit-transition: var(--main-transition, 0.3s);
+  -moz-transition: var(--main-transition, 0.3s);
+  -ms-transition: var(--main-transition, 0.3s);
+  -o-transition: var(--main-transition, 0.3s);
+}
+
+.widgets-control li input:hover::before {
+  border-color: var(--blue-color, #0075ff);
+}
+
+.widgets-control li input::after {
+  content: "\f00c";
+  font-family: var(--fa-style-family-classic);
+  font-weight: 900;
+  width: 20px;
+  height: 20px;
+  background-color: var(--blue-color, #0075ff);
+  color: #fff;
+  display: grid;
+  place-content: center;
+  position: absolute;
+  left: 0px;
+  top: 50%;
+  transform: translateY(-50%) scale(0) rotate(-360deg);
+  -webkit-transform: translateY(-50%) scale(0) rotate(-360deg);
+  -moz-transform: translateY(-50%) scale(0) rotate(-360deg);
+  -ms-transform: translateY(-50%) scale(0) rotate(-360deg);
+  -o-transform: translateY(-50%) scale(0) rotate(-360deg);
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  transition: var(--main-transition, 0.3s);
+  -webkit-transition: var(--main-transition, 0.3s);
+  -moz-transition: var(--main-transition, 0.3s);
+  -ms-transition: var(--main-transition, 0.3s);
+  -o-transition: var(--main-transition, 0.3s);
+}
+
+.widgets-control li input:checked::after {
+  transform: translateY(-50%) scale(1) rotate(0deg);
+  -webkit-transform: translateY(-50%) scale(1) rotate(0deg);
+  -moz-transform: translateY(-50%) scale(1) rotate(0deg);
+  -ms-transform: translateY(-50%) scale(1) rotate(0deg);
+  -o-transform: translateY(-50%) scale(1) rotate(0deg);
+}
+
+/* End Widgets Control */
+/* Start Backup Manager */
+.backup-manager .time label {
+  cursor: pointer;
+}
+
+.backup-manager .time input {
+  -webkit-appearance: none;
+  appearance: none;
+  margin-left: 30px;
+}
+
+.backup-manager .time input::before {
+  content: "";
+  position: absolute;
+  left: 0px;
+  top: 50%;
+  width: 16px;
+  height: 16px;
+  border: 2px solid #888;
+  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  cursor: pointer;
+}
+
+.backup-manager .time input::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 4px;
+  width: 12px;
+  height: 12px;
+  background-color: var(--blue-color, #0075ff);
+  transform: translateY(-50%) scale(0);
+  -webkit-transform: translateY(-50%) scale(0);
+  -moz-transform: translateY(-50%) scale(0);
+  -ms-transform: translateY(-50%) scale(0);
+  -o-transform: translateY(-50%) scale(0);
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  transition: var(--main-transition, 0.3s);
+  -webkit-transition: var(--main-transition, 0.3s);
+  -moz-transition: var(--main-transition, 0.3s);
+  -ms-transition: var(--main-transition, 0.3s);
+  -o-transition: var(--main-transition, 0.3s);
+  cursor: pointer;
+}
+
+.backup-manager .time input:checked:after {
+  transform: translateY(-50%) scale(1);
+  -webkit-transform: translateY(-50%) scale(1);
+  -moz-transform: translateY(-50%) scale(1);
+  -ms-transform: translateY(-50%) scale(1);
+  -o-transform: translateY(-50%) scale(1);
+}
+
+.backup-manager .size li {
+  width: calc(100% / 3);
+}
+
+.backup-manager .size li div {
+  width: 100%;
+  border: 2px solid #888;
+  text-align: center;
+  padding: 20px;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+
+.backup-manager .size input {
+  appearance: none;
+}
+
+.backup-manager .size label {
+  cursor: pointer;
+}
+
+
+.backup-manager .size li input:checked+div {
+  border-color: var(--blue-color, #0075ff);
+  color: var(--blue-color, #0075ff);
+}
+
+@media (max-width: 767px) {
+  .backup-manager .size {
+    flex-direction: column;
+  }
+
+  .backup-manager .size li {
+    width: 100%;
+  }
+}
+
+/* End Backup Manager */
 
 /* Start Animations */
 @keyframes in-progress {
