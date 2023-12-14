@@ -56,6 +56,10 @@
     justify-content: center;
 }
 
+.justify-end {
+    justify-content: flex-end;
+}
+
 .align-center {
     align-items: center;
 }
@@ -148,6 +152,10 @@
 
 .ml-10 {
     margin-left: 10px;
+}
+
+.mg-20 {
+    margin: 20px;
 }
 
 /* Start Font Styling */
